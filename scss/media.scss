@@ -1,0 +1,400 @@
+@media screen and (max-width: 1280px) {
+	.counts__item:first-child{
+		padding: 15px;
+	}
+	.counts__item:nth-child(3),
+	.counts__item:nth-child(2){
+		padding: 15px;
+		padding-bottom: 0;
+	}
+	.counts__item:nth-child(2) .item__image{
+		width: 320px;
+	}
+	.counts__item:nth-child(3) .item__image{
+		width: 300px;
+	}
+	.counts__item:nth-child(3) h3,
+	.counts__item:nth-child(2) h3{
+		font-size: 70px;
+	}
+	.invest__item:nth-child(2) .item__lft{
+		margin-right: 0;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.sides{
+		display: block;
+	}
+
+	.where .sides__lft{
+		margin-bottom: 30px;
+	}
+
+	.where,
+	.blockquotes,
+	.process,
+	.kind,
+	.opportunities,
+	.invest,
+	.counts{
+		margin-bottom: 80px;
+	}
+
+	.invest,
+	.kind{
+		padding: 70px 0;
+		margin-bottom: 0;
+	}
+
+	.counts__item:nth-child(3) .item__image,
+	.counts__item:nth-child(2) .item__image,
+	.counts__item:first-child .item__image{
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 20px;
+	}
+	.counts__item .item__text{
+		display: block;
+		text-align: center;
+	}
+	.counts__item:nth-child(2) h3, .counts__item:nth-child(3) h3{
+		margin-right: 0;
+	}
+
+
+	.opportunities__ol .ol__bgd{
+		border-left: 2px dashed #00ABFF;
+	}
+	.opportunities__ol .ol__bgd svg{
+		display: none;
+		left: 0;
+		min-width: 0;
+		min-height: 0;
+		top: 0;
+		&.line2{
+			// display: block;
+		}
+	}
+	.opportunities__ol{
+		max-width: 600px;
+		padding-top: 0;
+	}
+	.opportunities__ol ol:last-child{
+		margin-left: 0;
+		margin-top: 30px;
+		li{
+			&:last-child{
+				position: relative;
+				&:after{
+					content: '';
+					background: #fff;
+					position: absolute;
+					left: 20px;
+					bottom: -50px;
+					width: 10px;
+					height: 100%;
+				}
+			}
+		}
+	}
+	.opportunities__ol ol{
+		margin: -15px 0;
+	}
+	.opportunities__ol h3{
+		margin-bottom: 0px;
+	}
+	.opportunities__ol li{
+		margin: 15px 0;
+	}
+	.opportunities__ol{
+		display: block;
+	}
+
+	.counts__block{
+		display: block;
+	}
+	.counts__item{
+		margin-bottom: 15px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	.kind .sides__rht{
+		margin: 0 auto;
+	}
+
+	.where .sides__rht{
+		margin: 0 auto;
+	}
+	.where .sides__lft{
+		text-align: center;
+	}
+	.where h1{
+		width: fit-content;
+	}
+	.where h1,
+	.where a,
+	.where p{
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.footer__top .container{
+		flex-wrap: wrap;
+	}
+	.footer__block{
+		margin-bottom: 20px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.opportunities__block{
+		grid-template-columns: 1fr;
+		grid-gap: 10px;
+		margin-bottom: 30px;
+		margin-top: 27px;
+	}
+	.opportunities__item{
+		min-height: 56px;
+		border-radius: 20px;
+		font-size: 16px;
+		padding: 0 10px;
+		line-height: 150%;
+	}
+	.opportunities h2{
+		margin-bottom: 20px;
+	}
+	h2{
+		font-size: 28px;
+		line-height: 130%;
+		margin-bottom: 30px;
+	}
+	.invest, .kind{
+		padding: 50px 0;
+		padding-bottom: 0;
+	}
+	.invest h2{
+		margin-bottom: 40px;
+	}
+	.kind h2{
+		margin-bottom: 30px;
+	}
+	.kind p{
+		margin-top: 30px;
+	}
+	ul li{
+		font-size: 16px;
+		line-height: 162.19%;
+	}
+	.invest__item .item__sides{
+		display: block;
+	}
+	.invest__item:nth-child(2) .item__lft{
+		margin-left: 0;
+	}
+	.blockquotes p{
+		font-size: 16px;
+		line-height: 21px;
+	}
+	.blockquotes .quotes{
+		margin-left: 15px;
+		margin-right: 15px;
+		img{
+			width: 20px;
+		}
+	}
+	.blockquotes .quotes_2{
+		margin-bottom: 0;
+	}
+	.invest__item{
+		margin: 20px 0;
+	}
+	.process__block{
+		grid-template-columns: 1fr;
+		grid-gap: 15px;
+	}
+	.blockquotes, .counts, .invest, .kind, .opportunities, .process, .where{
+		margin-bottom: 50px;
+	}
+	.contact .container{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.contact__block p{
+		font-size: 14px;
+		line-height: 140%;
+		margin-bottom: 30px;
+	}
+	.counts__item .item__image{
+		transform: scale(.7);
+	}
+	.counts__item{
+		text-align: center;
+	}
+
+	.header .custom-logo-link{
+		max-width: 160px;
+	}
+	.where h1{
+		margin-bottom: 20px;
+	}
+	.where h1:after{
+		top: 30px;
+		left: auto;
+		right: 5%;
+	}
+	.process__item{
+		text-align: center;
+		padding: 20px 15px;
+		padding-top: 40px;
+	}
+	.process__item .item__ico{
+		display: flex;
+		justify-content: center;
+	}
+	.process__item p{
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.footer__top{
+		padding-bottom: 10px;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.where .sides__rht{
+		background: url('../img/where-image/image-mob.svg') no-repeat;
+		background-position: center;
+		background-size: contain;
+		height: 210px;
+		img{
+			display: none;
+		}
+	}
+
+	.blockquotes .quotes{
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	.blockquotes .quotes_2{
+		margin-right: 0;
+	}
+	.blockquotes .quotes_1{
+		margin-left: 0;
+	}
+
+	.blockquotes p{
+		font-size: 14px;
+	}
+
+	.counts__item{
+		p{
+			margin-bottom: 30px;
+		}
+		.item__image{
+			transform: scale(1);
+		}
+	}
+	.counts__item:first-child{
+		padding-bottom: 0;
+	}
+	.counts__item:first-child .item__image{
+		background: url('../img/counts-image/image-fr-mob.svg') no-repeat;
+		background-position: center;
+		background-size: contain;
+		height: 152px;
+		width: 100%;
+		img{
+			display: none;
+		}
+	}
+	.counts__item:first-child .item__image, .counts__item:nth-child(2) .item__image, .counts__item:nth-child(3) .item__image{
+		margin-top: 0;
+	}
+
+	.kind .sides__rht{
+		background: url('../img/kind-image/image-mob.svg') no-repeat;
+		background-position: center;
+		background-size: contain;
+		height: 291px;
+		width: 100%;
+		min-width: 0;
+		img{
+			display: none;
+		}
+	}
+
+	.invest__item:nth-child(1) .item__rht{
+		img{
+			display: none;
+		}
+		background: url('../img/invest-image/image-mob1.svg') no-repeat;
+		min-width: 0;
+		background-position: center;
+		background-size: contain;
+		height: 199px;
+		width: 100%;
+		margin: 0 auto;
+	}
+	.invest__item:nth-child(2) .item__rht{
+		background: url('../img/invest-image/image-mob2.svg') no-repeat;
+		min-width: 0;
+		background-position: center;
+		background-size: contain;
+		height: 238px;
+		width: 100%;
+		margin: 0 auto;
+		img{
+			display: none;
+		}
+	}
+	.invest__item:nth-child(3) .item__rht{
+		background: url('../img/invest-image/image-mob3.svg') no-repeat;
+		min-width: 0;
+		background-position: center;
+		background-size: contain;
+		height: 230px;
+		width: 100%;
+		margin: 0 auto;
+		img{
+			display: none;
+		}
+	}
+	.footer__block_logo a{
+		margin-bottom: 10px;
+	}
+	.opportunities__ol ol:nth-child(2){
+		min-width: 0;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
