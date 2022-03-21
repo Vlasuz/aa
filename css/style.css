@@ -1115,7 +1115,8 @@ ul li:before {
   background: #fff;
   padding: 20px;
   padding-top: 60px;
-  border-radius: 10px
+  border-radius: 10px;
+  max-width: 600px
 }
 .popup__close {
   width: 30px;
