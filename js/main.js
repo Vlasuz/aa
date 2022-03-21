@@ -8,6 +8,78 @@ if(document.querySelector('.wow'))
 
 
 
+// BANNER SLIDER
+	
+let countSlide = 1;
+let countSlideNow = 0;
+
+document.querySelectorAll('.banner__slider .slider__item').forEach((item, itemNum) => {
+	document.querySelector('.slider__dots').innerHTML += '<button class="dot"></button>'
+
+	if( itemNum == 0 ){
+		item.classList.add('slider__item_active')
+	}
+
+	countSlideNow = itemNum
+
+})
+
+document.querySelectorAll('.slider__dots .dot').forEach((dot, dotNum) => {
+	if( dotNum == 0 ){
+		dot.classList.add('dot_active')
+	}
+
+	if( dotNum < 1 ){
+		dot.closest('.slider__dots').classList.add('slider__dots_hide')
+	}else{
+		dot.closest('.slider__dots').classList.remove('slider__dots_hide')
+	}
+
+	dot.onclick = function (e) {
+		this.closest('.slider__dots').querySelectorAll('.dot').forEach((dot1) => {
+			dot1.classList.remove('dot_active')
+		})
+		document.querySelectorAll('.banner__slider .slider__item').forEach((item, itemNum) => {
+			item.classList.remove('slider__item_active')
+		})
+		document.querySelectorAll('.banner__slider .slider__item')[dotNum].classList.add('slider__item_active')
+
+		dot.classList.add('dot_active')
+
+		countSlide = dotNum
+		inter;
+	}
+})
+
+let inter = setInterval(function () {
+
+	document.querySelectorAll('.slider__dots .dot').forEach((dot) => {
+		dot.classList.remove('dot_active')
+	})
+	document.querySelectorAll('.banner__slider .slider__item').forEach((item) => {
+		item.classList.remove('slider__item_active')
+	})
+	document.querySelectorAll('.banner__slider .slider__item')[countSlide].classList.add('slider__item_active')
+	document.querySelectorAll('.slider__dots .dot')[countSlide].classList.add('dot_active')
+
+	countSlide++;
+
+	if( countSlide > countSlideNow ){
+		countSlide = 0
+	}
+
+	
+}, 2000)
+
+
+// BANNER SLIDER
+
+
+
+
+
+
+
 // ol count
 
 document.querySelectorAll('.opportunities__ol li').forEach((li, liNum) => {
@@ -89,33 +161,38 @@ window.addEventListener('mousemove', function (e) {
 
 // popup button
 
-document.querySelectorAll('button, a').forEach((button) => {
-	button.onclick = function (e) {
+if( document.querySelector('.popup') ){
 
-		if( this.getAttribute('data-popup') ){
-			
-			let popupClass = this.getAttribute('data-popup')
+	document.querySelectorAll('button, a').forEach((button) => {
+		button.onclick = function (e) {
 
-			document.querySelector('.popup-'+popupClass).classList.add('popup_active')
+			if( this.getAttribute('data-popup') ){
+				
+				let popupClass = this.getAttribute('data-popup')
+
+				document.querySelector('.popup-'+popupClass).classList.add('popup_active')
 
 
-		}else{
+			}else{
+
+			}
 
 		}
 
-	}
+		document.querySelector('.popup__bgd').onclick = function () {
+				
+			document.querySelector('.popup').classList.remove('popup_active')
 
-	document.querySelector('.popup__bgd').onclick = function () {
-			
-		document.querySelector('.popup').classList.remove('popup_active')
+		}
+		document.querySelector('.popup__close').onclick = function () {
+				
+			document.querySelector('.popup').classList.remove('popup_active')
 
-	}
-	document.querySelector('.popup__close').onclick = function () {
-			
-		document.querySelector('.popup').classList.remove('popup_active')
+		}
+	})
 
-	}
-})
+}
+
 
 
 // popup button

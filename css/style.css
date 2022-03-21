@@ -299,6 +299,15 @@ ul li:before {
 .header__languages .li_active a {
   color: #003257
 }
+.header-main {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  margin-bottom: 0;
+  background: #fff
+}
+.header-main a {
+  margin: 0 auto
+}
 .sides {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1275,6 +1284,314 @@ ul li:before {
   -ms-flex-pack: justify;
   justify-content: space-between
 }
+.footer-main {
+  margin-top: 100px
+}
+.footer-main .footer__bottom {
+  font-family: Montserrat,sans-serif
+}
+.footer-main .footer__top {
+  padding: 30px 0;
+  text-align: center
+}
+.footer-main .footer__top b {
+  font-family: Montserrat,sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  color: #003257;
+  margin-bottom: 20px
+}
+.footer-main .footer__top p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #000
+}
+.footer-main .footer__top p a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: #003257;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
+}
+.footer-main .footer__top p a:hover {
+  color: #0062be
+}
+.footer-main .footer__top .container {
+  display: block
+}
+@-webkit-keyframes animBottom {
+  from {
+    bottom: 30px
+  }
+  to {
+    bottom: 20px
+  }
+}
+@keyframes animBottom {
+  from {
+    bottom: 30px
+  }
+  to {
+    bottom: 20px
+  }
+}
+.banner__slider {
+  position: relative;
+  height: 610px
+}
+.banner__bottom {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  text-align: center;
+  animation: animBottom 1s ease-in-out 0s infinite alternate-reverse
+}
+.banner__bottom img {
+  display: block;
+  margin: 0 auto
+}
+.banner__bottom span {
+  font-family: Montserrat;
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 130%;
+  text-align: center;
+  color: #fff
+}
+.banner .slider__dots {
+  right: 60px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  position: absolute;
+  z-index: 2
+}
+.banner .slider__dots_hide {
+  display: none
+}
+.banner .dot {
+  width: 10px;
+  min-width: 10px;
+  height: 10px;
+  min-height: 10px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  display: block;
+  background: 0 0;
+  margin: 10px;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+  cursor: pointer
+}
+.banner .dot_active {
+  background: #fff
+}
+.banner .slider__item {
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+  height: 100%;
+  position: absolute;
+  width: 100%
+}
+.banner .slider__item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover
+}
+.banner .slider__item .item__photo {
+  width: 100%;
+  height: 100%;
+  position: relative
+}
+.banner .slider__item .item__photo:after {
+  content: '';
+  background: rgba(0,35,52,.7);
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%
+}
+.banner .slider__item .item__text {
+  position: absolute;
+  max-width: 870px;
+  text-align: center
+}
+.banner .slider__item .item__text h2.h1 {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 130%;
+  text-align: center;
+  color: #fff
+}
+.banner .slider__item_active {
+  opacity: 1
+}
+.main-quotes {
+  max-width: 792px;
+  margin: 80px auto
+}
+.main-quotes p {
+  font-family: Montserrat;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: #003257
+}
+.companies h2 {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 120%;
+  letter-spacing: .04em;
+  color: #003257;
+  margin-bottom: 50px;
+  text-align: center
+}
+.companies__block {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3,1fr)
+}
+.companies__item {
+  height: 370px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px
+}
+.companies__item .item__photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%
+}
+.companies__item .item__photo:after {
+  content: '';
+  background: rgba(0,35,52,.2);
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0
+}
+.companies__item .item__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  padding-top: 30px;
+  padding-bottom: 50px
+}
+.companies__item h3 {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: .05em;
+  color: #fff
+}
+.companies__item p {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  color: #fff
+}
+.companies__item button {
+  border: 1px solid #fff;
+  border-radius: 2px;
+  max-width: 300px;
+  width: 100%;
+  height: 50px;
+  background: 0 0;
+  margin: 0 auto;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
+}
+.companies__item button:hover {
+  border: 1px solid #1794d1;
+  background: #1794d1
+}
+.companies__item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  display: block
+}
+.companies__item:hover p {
+  opacity: 1
+}
+.companies__item:hover .item__photo:after {
+  background: rgba(0,35,52,.5)
+}
 @media screen and (max-width:1280px) {
   .counts__item:first-child {
     padding: 15px
@@ -1299,6 +1616,22 @@ ul li:before {
   }
 }
 @media screen and (max-width:992px) {
+  .slider__dots {
+    opacity: 0
+  }
+  .companies__block {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2,1fr)
+  }
+  .header-main {
+    padding: 10px 0
+  }
+  .header-main a {
+    max-width: 294px
+  }
+  .header-main a img {
+    max-width: 100%
+  }
   .sides {
     display: block
   }
@@ -1646,5 +1979,48 @@ ul li:before {
   }
   .opportunities__ol ol:nth-child(2) {
     min-width: 0
+  }
+  .banner .slider__item .item__text h2.h1 {
+    font-size: 36px;
+    line-height: 140%
+  }
+  .banner__slider {
+    height: calc(100vh - 77px)
+  }
+  .main-quotes {
+    margin: 40px 0
+  }
+  .main-quotes p {
+    font-size: 16px;
+    line-height: 150%
+  }
+  .companies h2 {
+    margin-bottom: 30px
+  }
+  .companies__block {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    margin-left: -15px;
+    margin-right: -15px;
+    grid-gap: 10px
+  }
+  .footer-main {
+    margin-top: 40px
+  }
+  .footer-main .footer__top p,
+  .footer-main .footer__top p a {
+    font-size: 14px;
+    line-height: 19px
+  }
+  .footer-main .footer__top b {
+    margin-bottom: 10px
+  }
+  .footer-main .footer__bottom,
+  .footer-main .footer__top {
+    padding: 20px 0
+  }
+  .footer-main .footer__bottom {
+    font-size: 14px;
+    line-height: 150%
   }
 }
