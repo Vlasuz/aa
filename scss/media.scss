@@ -233,8 +233,12 @@
 		text-align: center;
 	}
 
+	.header__logo,
 	.header .custom-logo-link{
 		max-width: 160px;
+		img{
+			max-width: 160px;			
+		}
 	}
 	.where h1{
 		margin-bottom: 20px;

@@ -231,7 +231,12 @@
   .counts__item {
     text-align: center
   }
-  .header .custom-logo-link {
+  .header .custom-logo-link,
+  .header__logo {
+    max-width: 160px
+  }
+  .header .custom-logo-link img,
+  .header__logo img {
     max-width: 160px
   }
   .where h1 {
