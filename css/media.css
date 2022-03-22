@@ -429,4 +429,10 @@
     font-size: 14px;
     line-height: 150%
   }
+  .companies__item p {
+    opacity: 1
+  }
+  .companies__item .item__photo:after {
+    background: rgba(0,35,52,.5)
+  }
 }
