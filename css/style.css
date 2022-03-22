@@ -1455,6 +1455,9 @@ ul li:before {
   max-width: 792px;
   margin: 80px auto
 }
+.main-quotes h2 {
+  display: none
+}
 .main-quotes p {
   font-family: Montserrat;
   font-style: italic;

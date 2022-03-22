@@ -1201,6 +1201,9 @@ ul{
 .main-quotes{
 	max-width: 792px;
 	margin: 80px auto;
+	h2{
+		display: none;
+	}
 	p{
 		font-family: 'Montserrat';
 		font-style: italic;
