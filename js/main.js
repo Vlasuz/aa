@@ -33,6 +33,25 @@ document.querySelectorAll('.slider__dots .dot').forEach((dot, dotNum) => {
 		dot.closest('.slider__dots').classList.add('slider__dots_hide')
 	}else{
 		dot.closest('.slider__dots').classList.remove('slider__dots_hide')
+		let inter = setInterval(function () {
+
+			document.querySelectorAll('.slider__dots .dot').forEach((dot) => {
+				dot.classList.remove('dot_active')
+			})
+			document.querySelectorAll('.banner__slider .slider__item').forEach((item) => {
+				item.classList.remove('slider__item_active')
+			})
+			document.querySelectorAll('.banner__slider .slider__item')[countSlide].classList.add('slider__item_active')
+			document.querySelectorAll('.slider__dots .dot')[countSlide].classList.add('dot_active')
+
+			countSlide++;
+
+			if( countSlide > countSlideNow ){
+				countSlide = 0
+			}
+
+			
+		}, 2000)
 	}
 
 	dot.onclick = function (e) {
@@ -51,25 +70,6 @@ document.querySelectorAll('.slider__dots .dot').forEach((dot, dotNum) => {
 	}
 })
 
-let inter = setInterval(function () {
-
-	document.querySelectorAll('.slider__dots .dot').forEach((dot) => {
-		dot.classList.remove('dot_active')
-	})
-	document.querySelectorAll('.banner__slider .slider__item').forEach((item) => {
-		item.classList.remove('slider__item_active')
-	})
-	document.querySelectorAll('.banner__slider .slider__item')[countSlide].classList.add('slider__item_active')
-	document.querySelectorAll('.slider__dots .dot')[countSlide].classList.add('dot_active')
-
-	countSlide++;
-
-	if( countSlide > countSlideNow ){
-		countSlide = 0
-	}
-
-	
-}, 2000)
 
 
 // BANNER SLIDER
